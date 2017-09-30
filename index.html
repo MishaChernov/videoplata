@@ -16,8 +16,8 @@
         <button class="burger  burger--closed">Открыть меню</button>
 
         <ul class="main-menu__list  main-menu__list--opened">
-          <li class="main-menu__item">
-            <a  class="main-menu__link" href="#">Главная</a>
+          <li class="main-menu__item  main-menu__item--active">
+            <a  class="main-menu__link">Главная</a>
           </li>
           <li class="main-menu__item">
             <a  class="main-menu__link" href="#">Лидеры</a>
@@ -25,15 +25,15 @@
           <li class="main-menu__item">
             <a  class="main-menu__link" href="#">Отзывы</a>
           </li>
-          <li class="main-menu__item   main-menu__item--active">
-            <a  class="main-menu__link">Есть вопросы?</a>
+          <li class="main-menu__item">
+            <a  class="main-menu__link" href="answers.html">Есть вопросы?</a>
           </li>
         </ul>
       </nav>
 
-      <a class="page-header__price" href="#">5800 &#8381;</a>
-
-      <button class="page-header__user">Вход</button>
+      <button class="page-header__user  page-header__user--on">Вход</button>
+      <span class="page-header__user  page-header__user--space"> | </span>
+      <button class="page-header__user  page-header__user--out">Регистрация</button>
     </div>
 
     <div class="last-paid">
@@ -51,28 +51,130 @@
   </header>
 
   <main class="page-main  container">
-    <section class="answers">
-      <h1 class="answers__title  title">Ответы на частые вопросы</h1>
+    <section class="video-list  video-list--opened">
+      <article class="video-list__item">
+        <span class="video-list__time">
+          <span class="video-list__time">&#128339;</span>1:49
+        </span>
+        <h3 class="video-list__name">День города в Екатеринбурге</h3>
 
-      <h2 class="answers__subtitle">В чем заключается предлагаемая работа?</h2>
-      <p class="answers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit soluta fugit ad consectetur aut nulla laudantium placeat dolores, molestiae. Harum dolores consectetur culpa quasi beatae expedita amet! A, minima.</p>
+        <div class="video-list__caption">
+          <span class="video-list__price">
+            <span class="video-list__price  video-list__price--icon">&#8381; </span>159
+          </span>
 
-      <h2 class="answers__subtitle">Сколько можно зарабатывать на сайте?</h2>
-      <p class="answers__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit soluta fugit ad consectetur aut nulla laudantium placeat dolores, molestiae. Harum dolores consectetur culpa quasi beatae expedita amet! A, minima.
-        <a  class="answers__link" href="#">Лидеры по заработку за прошедшие сутки</a>
-      </p>
+          <span class="video-list__watchings">
+            <span class="video-list__watchings  video-list__watchings--icon">&#128065; </span>4523
+          </span>
+        </div>
+      </article>
 
-      <h2 class="answers__subtitle">Есть ли у вас реферальная система?</h2>
-      <p class="answers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit soluta fugit ad consectetur aut nulla laudantium placeat dolores, molestiae. Harum dolores consectetur culpa quasi beatae expedita amet! A, minima.</p>
+      <article class="video-list__item">
+        <span class="video-list__time">
+          <span class="video-list__time">&#128339;</span>1:49
+        </span>
+        <h3 class="video-list__name">День города в Екатеринбурге</h3>
 
-      <h2 class="answers__subtitle">Как можно вывести заработанные деньги?</h2>
-      <p class="answers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit soluta fugit ad consectetur aut nulla laudantium placeat dolores, molestiae. Harum dolores consectetur culpa quasi beatae expedita amet! A, minima.</p>
+        <div class="video-list__caption">
+          <span class="video-list__price">
+            <span class="video-list__price  video-list__price--icon">&#8381; </span>159
+          </span>
 
-      <div class="answers__wrapper">
-        <span class="answers__text  answers__text--btn">Остались вопросы?</span><br>
-        <a class="answers__btn  btn" href="#">Задать вопрос</a>
+          <span class="video-list__watchings">
+            <span class="video-list__watchings  video-list__watchings--icon">&#128065; </span>4523
+          </span>
+        </div>
+      </article>
+
+      <article class="video-list__item">
+        <span class="video-list__time">
+          <span class="video-list__time">&#128339;</span>1:49
+        </span>
+        <h3 class="video-list__name">День города в Екатеринбурге</h3>
+
+        <div class="video-list__caption">
+          <span class="video-list__price">
+            <span class="video-list__price  video-list__price--icon">&#8381; </span>159
+          </span>
+
+          <span class="video-list__watchings">
+            <span class="video-list__watchings  video-list__watchings--icon">&#128065; </span>4523
+          </span>
+        </div>
+      </article>
+
+      <article class="video-list__item">
+        <span class="video-list__time">
+          <span class="video-list__time">&#128339;</span>1:49
+        </span>
+        <h3 class="video-list__name">День города в Екатеринбурге</h3>
+
+        <div class="video-list__caption">
+          <span class="video-list__price">
+            <span class="video-list__price  video-list__price--icon">&#8381; </span>159
+          </span>
+
+          <span class="video-list__watchings">
+            <span class="video-list__watchings  video-list__watchings--icon">&#128065; </span>4523
+          </span>
+        </div>
+      </article>
+
+      <article class="video-list__item">
+        <span class="video-list__time">
+          <span class="video-list__time">&#128339;</span>1:49
+        </span>
+        <h3 class="video-list__name">День города в Екатеринбурге</h3>
+
+        <div class="video-list__caption">
+          <span class="video-list__price">
+            <span class="video-list__price  video-list__price--icon">&#8381; </span>159
+          </span>
+
+          <span class="video-list__watchings">
+            <span class="video-list__watchings  video-list__watchings--icon">&#128065; </span>4523
+          </span>
+        </div>
+      </article>
+
+      <article class="video-list__item">
+        <span class="video-list__time">
+          <span class="video-list__time">&#128339;</span>1:49
+        </span>
+        <h3 class="video-list__name">День города в Екатеринбурге</h3>
+
+        <div class="video-list__caption">
+          <span class="video-list__price">
+            <span class="video-list__price  video-list__price--icon">&#8381; </span>159
+          </span>
+
+          <span class="video-list__watchings">
+            <span class="video-list__watchings  video-list__watchings--icon">&#128065; </span>4523
+          </span>
+        </div>
+      </article>
+      <div class="video-list__wrapper">
+        <a class="video-list__btn  btn" href="#">Ещё видео</a>
       </div>
+    </section>
+    <section class="video  video--opened">
+      <button class="btn-closed">Закрыть</button>
+      <h3 class="video__name">Название видео</h3>
+      <article class="video__item">
+        <button class="video__btn-play">Воспроизвести</button>
+        <span class="video__time">4:20</span>
+      </article>
+      <p class="video__price">
+        Стоимость: <span class="video__price  video__price--color">40 UAN</span>
+      </p>
+      <p class="video__text">Введите код с картинки <br>для подтверджения просмотра</p>
+      <form class="caption" action="/" mehtod="get">
+        <div class="caption__wrapper">
+          <label class="caption__numbers" for="caption"></label>
+          <input class="caption__input" type="text" id="caption" name="caption" placeholder="322">
+        </div>
+        <input  class="caption__btn  btn" type="submit" name="Кнопка" value="Отправить">
+      </form>
     </section>
   </main>
 
@@ -91,5 +193,7 @@
       &#169; 2008-2017 "Просмотр платных рекламных видеороликов".
     </p>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/main-js-min.js" type="text/javascript"></script>
 </body>
 </html>
