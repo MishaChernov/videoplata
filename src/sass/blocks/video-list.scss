@@ -1,8 +1,14 @@
 .video-list {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 30px;
+
+  &--closed {
+    display: none;
+  }
+  &--opened {
+    display: flex;
+  }
 }
 
 .video-list__item {

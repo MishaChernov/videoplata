@@ -1,0 +1,31 @@
+.btn-closed {
+  position: relative;
+  margin-left: auto;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  @include hover-effects;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #444444;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

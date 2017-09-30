@@ -16,8 +16,8 @@
         <button class="burger  burger--closed">Открыть меню</button>
 
         <ul class="main-menu__list  main-menu__list--opened">
-          <li class="main-menu__item">
-            <a  class="main-menu__link" href="#">Главная</a>
+          <li class="main-menu__item  main-menu__item--active">
+            <a  class="main-menu__link">Главная</a>
           </li>
           <li class="main-menu__item">
             <a  class="main-menu__link" href="#">Лидеры</a>
@@ -25,15 +25,15 @@
           <li class="main-menu__item">
             <a  class="main-menu__link" href="#">Отзывы</a>
           </li>
-          <li class="main-menu__item   main-menu__item--active">
-            <a  class="main-menu__link">Есть вопросы?</a>
+          <li class="main-menu__item">
+            <a  class="main-menu__link" href="answers.html">Есть вопросы?</a>
           </li>
         </ul>
       </nav>
 
-      <a class="page-header__price" href="#">5800 &#8381;</a>
-
-      <button class="page-header__user">Вход</button>
+      <button class="page-header__user  page-header__user--on">Вход</button>
+      <span class="page-header__user  page-header__user--space"> | </span>
+      <button class="page-header__user  page-header__user--out">Регистрация</button>
     </div>
 
     <div class="last-paid">
@@ -51,7 +51,7 @@
   </header>
 
   <main class="page-main  container">
-    <section class="video-list">
+    <section class="video-list  video-list--opened">
       <article class="video-list__item">
         <span class="video-list__time">
           <span class="video-list__time">&#128339;</span>1:49
@@ -156,6 +156,25 @@
       <div class="video-list__wrapper">
         <a class="video-list__btn  btn" href="#">Ещё видео</a>
       </div>
+    </section>
+    <section class="video  video--opened">
+      <button class="btn-closed">Закрыть</button>
+      <h3 class="video__name">Название видео</h3>
+      <article class="video__item">
+        <button class="video__btn-play">Воспроизвести</button>
+        <span class="video__time">4:20</span>
+      </article>
+      <p class="video__price">
+        Стоимость: <span class="video__price  video__price--color">40 UAN</span>
+      </p>
+      <p class="video__text">Введите код с картинки <br>для подтверджения просмотра</p>
+      <form class="caption" action="/" mehtod="get">
+        <div class="caption__wrapper">
+          <label class="caption__numbers" for="caption"></label>
+          <input class="caption__input" type="text" id="caption" name="caption" placeholder="322">
+        </div>
+        <input  class="caption__btn  btn" type="submit" name="Кнопка" value="Отправить">
+      </form>
     </section>
   </main>
 

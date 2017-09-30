@@ -28,6 +28,22 @@
 
   cursor: pointer;
   @include hover-effects;
+
+  &--on {
+    margin-right: 0;
+  }
+  &--out {
+    margin-left: 0;
+  }
+  &--space {
+    margin: 0 5px;
+    cursor: default;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .page-header__price {
