@@ -1,0 +1,19 @@
+@mixin hover-effects {
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+@mixin set-icon ($path, $w, $h) {
+  content: "";
+  position: absolute;
+  display: block;
+  width: $w;
+  height: $h;
+  background-image: $path;
+  background-repeat: no-repeat;
+  background-position: center;
+}
