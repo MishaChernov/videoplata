@@ -1,0 +1,83 @@
+.autorization {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 30px 80px;
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: #ececec;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+
+  &--opened {
+    z-index: 999;
+    display: block;
+  }
+  &--closed {
+    display: none;
+  }
+}
+
+.autorization__title {
+  color: #4e4d4d;
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.autorization__input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.autorization__btn {
+  margin-top: 20px;
+  outline: none;
+  border: none;
+}
+
+.autorization__social {
+  position: relative;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.autorization__icon {
+  font-size: 0;
+  @include hover-effects;
+
+  &--ok {
+    left: 110px;
+    border-radius: 50%;
+    @include set-icon(url("../img/icons/odnoklassniki.svg"), 40px, 40px)
+  }
+  &--vk {
+    left: 170px;
+    @include set-icon(url("../img/icons/vk.svg"), 40px, 40px)
+  }
+  &--fb {
+    left: 230px;
+    @include set-icon(url("../img/icons/facebook.svg"), 40px, 40px)
+  }
+}
+
+.autorization__text {
+  font-size: 20px;
+}
+
+.autorization__link {
+  font-family: $primary-font-family;
+  text-decoration: none;
+  color: $primary-color;
+
+  @include hover-effects;
+}
